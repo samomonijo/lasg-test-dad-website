@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 30px 20px;
+  background: rgb(250, 250, 250);
+}
+
+.body {
+  opacity: 0;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+.page-top {
+  height: 150px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  background: rgb(0, 0, 58);
+  color: white;
+  height: 150px;
+  font: bold 20px "Arial", sans-serif;
+  padding: 0px 50px;
+  border-bottom: 3px solid brown;
+}
+
+header img {
+  font: normal 5px "Arial", sans-serif;
+  width: 15%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.title {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  gap: 5px;
+  padding: 15px 20px;
+  background: white;
+  color: black;
+  border: 1px solid white;
+}
+
+nav {
+  position: fixed;
+  top: 75%;
+  right: 25px;
+  cursor: pointer;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.question-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .question-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1999px) {
+  .question-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .question-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+form {
+  border: 0.5px solid black;
+  padding: 20px;
+  background: white;
+}
+
+form .question {
+  font: 1000 15px "Helvetica", sans-serif;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+form .options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font: normal 15px Georgia, serif;
+}
+
+form .option {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+footer {
+  justify-self: center;
+}
+
+footer button,
+.retake-test-button {
+  background: green;
+  color: yellow;
+  border: none;
+  padding: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+footer button:hover,
+.retake-test-button:hover {
+  background: yellow;
+  color: green;
+}
+
+footer button:active,
+.retake-test-button:active {
+  background: rgb(163, 163, 0);
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font: bold 20px "Helvetica", sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

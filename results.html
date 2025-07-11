@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Results</title>
+
+    <link rel="stylesheet" href="styles/test-website.css">
+  </head>
+
+  <body>
+    <div class="results">
+      <p>You have finished your test.</p>
+
+      <p class="js-remark-p"></p>
+
+      <p class="js-score-p"></p>
+
+      <button class="retake-test-button js-retake-test-button">
+        Retake test
+      </button>
+    </div>
+  </body>
+
+  <script src="scripts/results.js"></script>
+  <script>
+    const retakeTestButtonElement = document.querySelector('.js-retake-test-button');
+
+    remarkElement.innerHTML = `${grade}!`;
+    scoreElement.innerHTML = `You scored (${results} / 104) - ${((results / 104) * 100).toFixed(2)}%`;
+
+    retakeTestButtonElement.addEventListener('click', () => {
+      window.location.href = 'test-website.html';
+    });
+  </script>
+</html>

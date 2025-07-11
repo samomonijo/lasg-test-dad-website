@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sign-in-box {
+  border: 0.5px solid lightgray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 0px 30px;
+}
+
+.sign-in-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 20px 0px 70px 0px;
+}
+
+.input-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0px;
+  margin-bottom: 40px;
+}
+
+.input-sections div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-sections p {
+  display: inline-block;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+}
+
+.input-sections input {
+  height: 30px;
+  margin: 0;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  padding: 0px 0px 0px 10px;
+}
+
+span {
+  color: red;
+  font-size: 10px;
+}
+
+.input-sections input::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign-in-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-section button {
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.sign-in-section button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in-section button:active {
+  opacity: 0.3;
+}
